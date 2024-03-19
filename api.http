@@ -1,0 +1,32 @@
+## index
+GET {{host}}/api/posts HTTP/2
+Accept: application/json
+Content-Type: application/json
+
+### get single
+GET {{host}}/api/posts/1 HTTP/2
+Accept: application/json
+Content-Type: application/json
+
+### create
+POST {{host}}/api/posts HTTP/2
+Accept: application/json
+Content-Type: application/json
+
+{
+  "title": "Post 1",
+  "content": "Content 1"
+}
+
+### update
+PUT {{host}}/api/posts/1 HTTP/2
+Accept: application/json
+Content-Type: application/json
+
+{
+  "title": "Post 1",
+  "content": "Content 1"
+}
+
+### delete
+DELETE {{host}}/api/posts/1 HTTP/2
